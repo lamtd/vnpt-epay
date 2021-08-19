@@ -5,7 +5,8 @@
     "require": {
         "php": "^7.1",
         "ignited/laravel-omnipay": "^3.3",
-        "illuminate/support": "^5.7 || ^6.0 || ^7.0 || ^8.0"
+        "illuminate/support": "^5.7 || ^6.0 || ^7.0 || ^8.0",
+        "phpviet/laravel-omnipay": "^1.1"
     },
     "require-dev": {
         "orchestra/testbench": "6.x-dev"
