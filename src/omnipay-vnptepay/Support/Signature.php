@@ -52,11 +52,28 @@ class Signature
         $plainTxtToken = $data['timeStamp'] . $data['merTrxId'] . 
         $data['merId'] . ($data['amount'] + $data['userFee']) . $data['EncodeKey'];
 
-        if (!empty($data['resultCd'])){//Chiều trả về của VNPT sinh ra token kah1c
+        //Chiều trả về của VNPT sinh ra token khác
+        if (!empty($data['resultCd'])){
+            
             $plainTxtToken = $data['resultCd'].$data['timeStamp'] . $data['merTrxId'] . 
-            $data['trxId'].$data['merId'].($data['amount']).$data['EncodeKey'];
+            $data['trxId'].$data['merId']. $data['amount'];
+            if (!empty($data['userFee'])){
+                $plainTxtToken .= $data['userFee'];
+            }
+            $plainTxtToken .= $data['EncodeKey'];
+
+            // echo $data['resultCd']."<br>" ;
+            // echo $data['timeStamp']."<br>" ;
+            // echo $data['merTrxId']."<br>" ;
+            // echo $data['trxId']."<br>" ;
+            // echo $data['merId']."<br>" ;
+            // echo $data['amount']."<br>" ;
+            // echo $data['userFee']."<br>" ;
+            // echo $data['EncodeKey']."<br>" ;
+            // echo $this->hashType.'<br>';
+            // echo hash($this->hashType, $plainTxtToken);;
         }
-        // echo $plainTxtToken."<br>" ;
+        
         return hash($this->hashType, $plainTxtToken);
     }
 

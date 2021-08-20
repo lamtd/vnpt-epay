@@ -55,7 +55,6 @@ trait Parameters
      */
     public function setMerid(?string $code)
     {
-        echo "set Par";
         return $this->setParameter('merId', $code);
     }
 
@@ -78,7 +77,6 @@ trait Parameters
      */
     public function setEncodekey(?string $secret)
     {
-        echo "set encode";
         return $this->setParameter('EncodeKey', $secret);
     }
 }

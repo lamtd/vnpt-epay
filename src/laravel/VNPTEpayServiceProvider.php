@@ -13,7 +13,7 @@ class VNPTEpayServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->make('lamtd\\VNPTEpay\\TestVNPTEpaytController');
+        $this->app->make('Lamtd\VNPTEpay\\TestVNPTEpaytController');
     }
 
     /**

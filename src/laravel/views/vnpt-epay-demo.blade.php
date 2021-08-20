@@ -123,7 +123,9 @@
                     paymentForm = document.getElementById('megapayForm');
                     for (const [key, value] of Object.entries(res)) {
                         if (paymentForm.elements[key]){
-                            paymentForm.elements[key].value = value;
+                            if (value){
+                                paymentForm.elements[key].value = value;
+                            }
                         }
                     }
                     openPayment(1, domain);

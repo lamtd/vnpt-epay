@@ -29,13 +29,7 @@ trait ResponseSignatureValidation
             throw new InvalidResponseException('Không có trường token từ VNPT EPAY!');
         }
 
-        // $dataSignature = array_filter($this->getData(), function ($parameter) {
-        //     return 0 === ('merchantToken' !== $parameter)
-        //         // && 'merchantTokenType' !== $parameter
-        //         ;
-        // }, ARRAY_FILTER_USE_KEY);
         $data['EncodeKey']  = $this->getRequest()->getEncodekey();
-        // echo json_encode($data)."<br>";
         $signature = new Signature(
             'sha256'
         );
