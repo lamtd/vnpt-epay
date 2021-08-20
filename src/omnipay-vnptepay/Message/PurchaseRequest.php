@@ -11,18 +11,14 @@
  */
 
 
-namespace Omnipay\VnptEpay\Message;
+namespace Omnipay\VNPTEpay\Message;
 
 /**
- * @author Vuong Minh <vuongxuongminh@gmail.com>
+ * @author lamtd <lamtd@boonygroup.com>
  * @since 1.0.0
  */
 class PurchaseRequest extends AbstractSignatureRequest
 {
-    /**
-     * {@inheritdoc}
-     */
-    protected $productionEndpoint = '';
 
     /**
      * {@inheritdoc}

@@ -5,13 +5,13 @@
  * @license [MIT](http://www.opensource.org/licenses/MIT)
  */
 
-namespace Omnipay\VnptEpay\Message\Concerns;
+namespace Omnipay\VNPTEpay\Message\Concerns;
 
 use Omnipay\Common\Exception\InvalidResponseException;
-use Omnipay\VnptEpay\Support\Signature;
+use Omnipay\VNPTEpay\Support\Signature;
 
 /**
- * @author Vuong Minh <vuongxuongminh@gmail.com>
+ * @author lamtd <lamtd@boonygroup.com>
  * @since 1.0.0
  */
 trait ResponseSignatureValidation

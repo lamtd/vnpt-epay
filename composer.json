@@ -14,14 +14,14 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            
-            "lamtd\\VNPTEpay\\": "src/"
+            "lamtd\\VNPTEpay\\": "src/laravel/",
+            "Omnipay\\VNPTEpay\\": "src/omnipay-vnptepay/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "lamtd\\VNPTEpay\\VNPTEpayServiceProvider"
+                "lamtd\\VNPTEpay\\laravel\\VNPTEpayServiceProvider"
             ]
         }
     },

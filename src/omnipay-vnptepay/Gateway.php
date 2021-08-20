@@ -6,13 +6,13 @@
  * @license [MIT](https://opensource.org/licenses/MIT)
  */
 
-namespace Omnipay\VnptEpay;
+namespace Omnipay\VNPTEpay;
 
 use Omnipay\Common\AbstractGateway;
-use Omnipay\VnptEpay\Message\IncomingRequest;
-use Omnipay\VnptEpay\Message\PurchaseRequest;
-use Omnipay\VnptEpay\Message\QueryTransactionRequest;
-use Omnipay\VnptEpay\Message\RefundRequest;
+use Omnipay\VNPTEpay\Message\IncomingRequest;
+use Omnipay\VNPTEpay\Message\PurchaseRequest;
+use Omnipay\VNPTEpay\Message\QueryTransactionRequest;
+use Omnipay\VNPTEpay\Message\RefundRequest;
 
 /**
  * @author Lam Truong <lamtd@boonygroup.com>

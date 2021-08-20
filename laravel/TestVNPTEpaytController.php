@@ -5,7 +5,8 @@ namespace lamtd\VNPTEpay;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-use Omnipay\VnptEpay\Facade\Gateway as VNPTEpay;
+use lamtd\VNPTEpay\Facade\Gateway as VNPTEpay;
+// use Omnipay\VNPTEpay\Gateway as VNPTEpay;
 use Exeption;
 
 class TestVNPTEpaytController extends Controller
@@ -18,13 +19,14 @@ class TestVNPTEpaytController extends Controller
      */
     public function process_VNPTEPay(Request $request){
 
-        return VNPTEpay::purchase([
+        $responds =  VNPTEpay::purchase([
             'amount' => $request -> input('goodsAmount'),
             'userFee' => $request -> input('userFee'),
             'userId' => $request -> input('userId'),
-            'callBackUrl' => route('vnpt-epay-success'), 
+            'callBackUrl' => route('demo-result-vnpt-epay'), 
             'notiUrl' => '' //khi test local không dùng link ipn được
-        ]) -> send();;
+        ]) ;
+        $responds -> send();
 
         // 9704 0000 0000 0018
         // NGUYEN VAN A 03/07 otp

@@ -6,14 +6,14 @@
  * @license [MIT](https://opensource.org/licenses/MIT)
  */
 
-namespace Omnipay\VnptEpay\Message;
+namespace Omnipay\VNPTEpay\Message;
 
 use Omnipay\Common\Message\AbstractRequest;
-use Omnipay\VnptEpay\Concerns\Parameters;
-use Omnipay\VnptEpay\Concerns\ParametersNormalization;
+use Omnipay\VNPTEpay\Concerns\Parameters;
+use Omnipay\VNPTEpay\Concerns\ParametersNormalization;
 
 /**
- * @author Vuong Minh <vuongxuongminh@gmail.com>
+ * @author lamtd <lamtd@boonygroup.com>
  * @since 1.0.0
  */
 class IncomingRequest extends AbstractRequest

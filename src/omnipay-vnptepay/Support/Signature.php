@@ -5,12 +5,12 @@
  * @license [MIT](http://www.opensource.org/licenses/MIT)
  */
 
-namespace Omnipay\VnptEpay\Support;
+namespace Omnipay\VNPTEpay\Support;
 
 use InvalidArgumentException;
 
 /**
- * @author Vuong Minh <vuongxuongminh@gmail.com>
+ * @author lamtd <lamtd@boonygroup.com>
  * @since 1.0.0
  */
 class Signature

@@ -6,13 +6,13 @@
  * @license [MIT](https://opensource.org/licenses/MIT)
  */
 
-namespace Omnipay\VnptEpay\Message;
+namespace Omnipay\VNPTEpay\Message;
 
 use Omnipay\Common\Message\RedirectResponseInterface;
 use Omnipay\Common\Message\RequestInterface;
 
 /**
- * @author Vuong Minh <vuongxuongminh@gmail.com>
+ * @author lamtd <lamtd@boonygroup.com>
  * @since 1.0.0
  */
 class PurchaseResponse extends Response implements RedirectResponseInterface

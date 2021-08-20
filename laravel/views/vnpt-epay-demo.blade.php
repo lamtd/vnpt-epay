@@ -80,45 +80,6 @@
 
             <div class="row">
                 <table>
-                    
-                    <tr id="showPayOption_IC">
-                        <td><b>Payment Option</b></td>
-                        <td>
-                            <table class="subTbl">
-                                <tr>
-                                    <td>
-                                        <input type="radio" name="payOption" id="payOption" id="payOption" value=""/>Dùng thông tin thẻ
-                                    </td>
-                                    <td>
-                                        <input type="radio" name="payOption" id="payOption" value="PAY_AND_CREATE_TOKEN" id="payOption"/>Thanh toán và Lưu thẻ(Tạo Token)
-                                    </td>
-                                    <td>
-                                        <input type="radio" name="payOption" id="payOption" value="PAY_WITH_TOKEN" id="payOption"/>Sử dụng thẻ đã lưu(Dùng Token)
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-                    
-                    <tr id="showPayOption_DC">
-                        <td><b>Payment Option</b></td>
-                        <td>
-                            <table class="subTbl">
-                                <tr>
-                                    <td>
-                                        <input type="radio" name="payOption" id="payOption" id="payOption" value=""/>Dùng thông tin thẻ
-                                    </td>
-                                    <td>
-                                        <input type="radio" name="payOption" id="payOption" value="PAY_WITH_RETURNED_TOKEN" id="payOption"/>Thanh toán và Lưu thẻ(Tạo Token)
-                                    </td>
-                                    <td>
-                                        <input type="radio" name="payOption" id="payOption" value="PURCHASE_OTP" id="payOption"/>Sử dụng thẻ đã lưu(Dùng Token)
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
-
                     <tr id="showUserId">
                         <td><b>Data Demo đơn hàng</b></td>
                         <td>
@@ -155,7 +116,7 @@
             type : 'POST',
             dataType : 'json',
             data : { goodsAmount : goodsAmount, userFee : userFee, userId : userId, 
-                order_id: orderID, order_code:orderCode },
+                },
                 success : function(res) {
                 if (res.success) {
                     var domain = res.domain;

@@ -6,10 +6,10 @@
  * @license [MIT](https://opensource.org/licenses/MIT)
  */
 
-namespace Omnipay\VnptEpay\Facade;
+namespace lamtd\VNPTEpay\Facade;
 
 use Illuminate\Support\Facades\Facade;
-use Omnipay\VnptEpay\Gateway as VNPTGateway;
+use Omnipay\VNPTEpay\Gateway as VNPTGateway;
 
 /**
  *
@@ -20,9 +20,11 @@ class Gateway extends Facade
 {
     /**
      * {@inheritdoc}
-     */
-    protected static function getFacadeAccessor(): VNPTGateway
+     * gốc https://github.com/thephpleague/omnipay
+     */ 
+    protected static function getFacadeAccessor() : VNPTGateway
     {
-        return static::$app['omnipay']->gateway('VnptEpay');
+        
+        return static::$app['omnipay']->gateway('VNPTEpay');
     }
 }

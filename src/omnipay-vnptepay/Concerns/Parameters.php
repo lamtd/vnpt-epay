@@ -6,17 +6,17 @@
  * @license [MIT](https://opensource.org/licenses/MIT)
  */
 
-namespace Omnipay\VnptEpay\Concerns;
+namespace Omnipay\VNPTEpay\Concerns;
 
 /**lấy những biến mặc định từ file config
  * đã load lên hết từ Ignited\LaravelOmnipay; lưu ý: function dùng set + ucfirst(option_name)
- * @author Vuong Minh <vuongxuongminh@gmail.com>
+ * @author lamtd <lamtd@boonygroup.com>
  * @since 1.0.0
  */
 trait Parameters
 {
     /**
-     * Trả về mã Tmn do VNPay cấp.
+     * Trả về mã Tmn do VNPT cấp.
      *
      * @return null|string
      */
@@ -37,24 +37,25 @@ trait Parameters
     }
 
     /**
-     * Trả về mã Tmn do VNPay cấp.
+     * Trả về mã Tmn do VNPT cấp.
      *
      * @return null|string
      */
     public function getMerid(): ?string
     {  
+       
         return $this->getParameter('merId');
     }
 
     /**
-     * Thiết lập mã Tmn.
+     * Thiết lập mã .
      *
      * @param  null|string  $code
      * @return $this
      */
     public function setMerid(?string $code)
     {
-        
+        echo "set Par";
         return $this->setParameter('merId', $code);
     }
 
@@ -77,6 +78,7 @@ trait Parameters
      */
     public function setEncodekey(?string $secret)
     {
+        echo "set encode";
         return $this->setParameter('EncodeKey', $secret);
     }
 }
