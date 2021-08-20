@@ -1,6 +1,6 @@
 <?php
 
-namespace lamtd\VNPTEpay;
+namespace Lamtd\VNPTEpay;
 
 use Illuminate\Support\ServiceProvider;
 

@@ -1,11 +1,11 @@
 <?php
 
-namespace lamtd\VNPTEpay;
+namespace Lamtd\VNPTEpay;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-use lamtd\VNPTEpay\Facade\Gateway as VNPTEpay;
+use Lamtd\VNPTEpay\Facade\Gateway as VNPTEpay;
 // use Omnipay\VNPTEpay\Gateway as VNPTEpay;
 use Exeption;
 

@@ -6,7 +6,7 @@
  * @license [MIT](https://opensource.org/licenses/MIT)
  */
 
-namespace lamtd\VNPTEpay\Facade;
+namespace Lamtd\VNPTEpay\Facade;
 
 use Illuminate\Support\Facades\Facade;
 use Omnipay\VNPTEpay\Gateway as VNPTGateway;
