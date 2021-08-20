@@ -37,7 +37,7 @@ Sau khi cài đặt xong bạn cần phải publish config file để thiết l�
 
 ```php
 php artisan vendor:publish --provider="PHPViet\Laravel\Omnipay\OmnipayServiceProvider" --tag="config"
-php artisan vendor:publish --provider="lamtd\VNPTEpay\VNPTEpayServiceProvider"
+php artisan vendor:publish --provider="Lamtd\VNPTEpay\VNPTEpayServiceProvider"
 ```
 
 Thêm vào cuối file config/laravel-omnipay.php
