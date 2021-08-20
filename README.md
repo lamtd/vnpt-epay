@@ -46,7 +46,7 @@ Thêm vào cuối file config/laravel-omnipay.php
 'VnptEpay' => [
             'driver' => 'VnptEpay',
             'options' => [
-                'MerID' => '',
+                'merId' => '',
                 'EncodeKey' => '',
                 'VNPTDomain' => 'https://sandbox.megapay.vn:2810', //Domain test
                 'CANCEL_PASSWORD' => '',
@@ -55,3 +55,10 @@ Thêm vào cuối file config/laravel-omnipay.php
             ],
         ],
 ```
+# Demo:
+```php
+truy cập theo path /vnpt-epay-demo
+```
+## Dành cho nhà phát triển
+
+Đây là version mình đã test trên phần thanh toán VNPT Epay. Nếu có lỗi hoặc muốn mở rộng chức năng, Hãy tạo các `issue` để mình cập nhật cho hoàn chỉnh. Nếu bạn muốn liên hệ trực tiếp hãy gửi mail về lamtd@boonygroup.com . Cảm ơn!
