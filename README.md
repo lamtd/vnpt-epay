@@ -13,17 +13,6 @@
 # Miêu  tả
 Tạo cổng thanh toán VNPT. Thư viện dùng để bổ sung cổng thanh toán VNPT Epay từ bộ thanh toán Omnipay
 
-Ví dụ:
-```php
-return VNPTEpay::purchase([
-            'amount' => $request -> input('goodsAmount'),
-            'userFee' => $request -> input('userFee'),
-            'userId' => $request -> input('userId'),
-            'callBackUrl' => route('vnpt-epay-success'), 
-            'notiUrl' => '' //khi test local không dùng link ipn được
-        ]) -> send();;
-
-```
 ## Cài đặt
 
 Cài đặt VNPT Epay thông qua [Composer](https://getcomposer.org):
@@ -54,6 +43,28 @@ Thêm vào cuối file config/laravel-omnipay.php
                 'KEY3DES_DECRYPT' => '',
             ],
         ],
+```
+# Sử dụng
+Load class:
+```php
+use Lamtd\VNPTEpay\Facade\Gateway as VNPTEpay;
+
+```
+Gọi ở function:
+```php
+return VNPTEpay::purchase([
+            'amount' => $request -> input('goodsAmount'),
+            'userFee' => $request -> input('userFee'),
+            'userId' => $request -> input('userId'),
+            'callBackUrl' => route('vnpt-epay-success'), 
+            'notiUrl' => '' //khi test local không dùng link ipn được
+        ]) -> send();;
+
+```
+
+Bạn có thể xem demo ở
+```php
+vendor/lamtd/vnpt-epay/src/laravel/TestVNPTEpaytController.php
 ```
 # Demo:
 ```php
