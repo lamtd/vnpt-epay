@@ -29,20 +29,6 @@ class TestVNPTEpaytController extends Controller
 
         // 9704 0000 0000 0018
         // NGUYEN VAN A 03/07 otp
-
-        // amount: 10000
-        // callBackUrl: "http://localhost:8000/api/public/order/ipn-vnpt-epay"
-        // description: "TT Hoa Don: Order_20210819180033_5077"
-        // domain: "https://sandbox.megapay.vn:2810"
-        // invoiceNo: "Order_20210819180033_5077"
-        // merId: "EPAY000001"
-        // merTrxId: "MERTRXID20210819180033_2761"
-        // merchantToken: "dc7bbb8c636e6b1a65d621f759185690231ced39df0f3b18bb0c7567134cc046"
-        // notiUrl: "http://localhost:8000/api/public/order/vnpt-epay-success"
-        // success: true
-
-        // e55d057239fc046649033e67b93d7a2940194add9e78b75b1020e9717bf3fadb
-
     }
     
     /**
