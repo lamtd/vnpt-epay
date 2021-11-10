@@ -61,11 +61,20 @@ return VNPTEpay::purchase([
         ]) -> send();;
 
 ```
+Listen từ vnpt:
+```php
+$response = VNPTEpay::notification()->send();
+```
 
 Bạn có thể xem demo ở
 ```php
 vendor/lamtd/vnpt-epay/src/laravel/TestVNPTEpaytController.php
 ```
+Khi chạy thực tế, vì vnpt sử dụng POST JSON nên cần thay đổi listener:
+```php
+$response = VNPTEpay::notificationJSON()->send();
+```
+
 # Demo:
 ```php
 truy cập theo path /vnpt-epay-demo
