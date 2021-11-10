@@ -12,6 +12,7 @@ use Omnipay\Common\Message\RedirectResponseInterface;
 use Omnipay\Common\Message\RequestInterface;
 
 /**
+ * chỉ dùng cho môi trường test, môi trường product dùng json
  * @author lamtd <lamtd@boonygroup.com>
  * @since 1.0.0
  */

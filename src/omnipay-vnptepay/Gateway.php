@@ -10,8 +10,8 @@ namespace Omnipay\VNPTEpay;
 
 use Omnipay\Common\AbstractGateway;
 use Omnipay\VNPTEpay\Message\IncomingRequest;
+use Omnipay\VNPTEpay\Message\IncomingRequestJSON;
 use Omnipay\VNPTEpay\Message\PurchaseRequest;
-use Omnipay\VNPTEpay\Message\QueryTransactionRequest;
 use Omnipay\VNPTEpay\Message\RefundRequest;
 
 /**
@@ -64,12 +64,12 @@ class Gateway extends AbstractGateway
     }
 
     /**
-     * {@inheritdoc}
+     * sử dụng cho product
      * @return \Omnipay\Common\Message\AbstractRequest|IncomingRequest
      */
-    public function completePurchase(array $options = []): IncomingRequest
+    public function notificationJSON(array $options = []): IncomingRequestJSON
     {
-        return $this->createRequest(IncomingRequest::class, $options);
+        return $this->createRequest(IncomingRequestJSON::class, $options);
     }
 
     /**
@@ -84,17 +84,7 @@ class Gateway extends AbstractGateway
     }
 
     /**
-     * Tạo yêu cầu truy vấn thông tin giao dịch đến VNPay.
-     *
-     * @param  array  $options
-     * @return \Omnipay\Common\Message\AbstractRequest|QueryTransactionRequest
-     */
-    public function queryTransaction(array $options = []): QueryTransactionRequest
-    {
-        return $this->createRequest(QueryTransactionRequest::class, $options);
-    }
-
-    /**
+     * chưa dùng tới
      * {@inheritdoc}
      * @return \Omnipay\Common\Message\AbstractRequest|RefundRequest
      */

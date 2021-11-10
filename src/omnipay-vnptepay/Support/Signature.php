@@ -50,7 +50,7 @@ class Signature
 
         ksort($data);
         $plainTxtToken = $data['timeStamp'] . $data['merTrxId'] . 
-        $data['merId'] . ($data['amount'] + (empty($data['userFee']) ? 0 : $data['userFee'])) . $data['EncodeKey'];
+        $data['merId'] . ($data['amount'] + (empty($data['userFee']) ? 0 : $data['userFee']) ) . $data['EncodeKey'];
 
         //Chiều trả về của VNPT sinh ra token khác
         if (!empty($data['resultCd'])){
